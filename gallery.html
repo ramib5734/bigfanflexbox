@@ -1,0 +1,89 @@
+<html>
+    <head>
+        <title>Big Fan Project</title>
+        <link href="styles.css" rel="stylesheet" type="tex/css">
+    </head> 
+    <style>
+        body{
+            background-color: #fdfdfd;
+            font-family: monospace;
+            font-size: 50px;
+            text-align: center;
+            background-image: url(https://cdn.discordapp.com/attachments/579361313688649730/943574400307986502/latest.png);
+            background-size: 5%;
+        }
+        #backgroundanim{
+            animation-name: color;
+            animation-duration: 10s;
+            animation-iteration-count: infinite;
+            animation-fill-mode: forwards;
+            width: 60%;
+            height: auto;
+            border: 3px solid #000;
+            align-self: center;
+        }
+        @keyframes color{
+            0%{
+                background-color: #00AEEF;
+            }
+            50%{
+                background-color:#fdfdfd;
+            }
+            100%{
+                background-color: #00AEEF;
+            }
+        }
+        #container{
+            display: flex;
+            height: 2000px;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-evenly;
+        }
+        #imageone{
+            width: 50%;
+            height: auto;
+            border: 3px solid #000; 
+            top: 25px;
+        }
+        #imagetwo{
+            width: 50%;
+            height: auto;
+            border: 3px solid #000;
+            top: 25px;
+            flex-basis: auto;
+        }
+        #imagethree{
+            width: 50%;
+            height: auto;
+            border: 3px solid #000;
+            top: 25px;
+            flex-basis: auto;
+        }
+        #navmenu{
+            width: 250px;
+            height: 120px;
+            background-color:#00AEEF;
+            border: 5px solid #000;
+            list-style-type: none;
+            font-size: 25px;
+            padding: 5px;
+            align-self: center;
+         }
+    </style>
+    <div id="container">
+    <h id="backgroundanim"><b>Gallery</b></h>
+    <img id="imageone" src="https://assets1.ignimgs.com/2018/01/30/br-1517350618762_160w.jpg?width=1280">
+    <img id="imagetwo" src="https://www.dexerto.com/wp-content/uploads/2021/04/11/perkz-leads-cloud9-to-3-2-victory-over-team-liquid-lcs-mid-season-showdown-placements-recap.jpg">
+    <img id="imagethree" src="https://cdn.discordapp.com/attachments/579361313688649730/942980146573496361/cloud9-blue-feature-img.png">
+    <nav>
+        <ul id="navmenu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="stats.html">Stats</a></li>
+            <li><a href="ls.html">LS</a></li>
+        </ul>
+    </nav>
+    </div>
+    <footer style="font-size: 30px"><b>©Copyright Cloud9 2022</b></footer>
+</html>

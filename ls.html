@@ -1,0 +1,92 @@
+<html>
+    <head>
+        <title>Big Fan Project</title>
+        <link href="styles.css" rel="stylesheet" type="tex/css">
+    </head> 
+    <style>
+        body{
+            background-color: #fdfdfd;
+            font-family: monospace;
+            font-size: 50px;
+            text-align: center;
+            background-image: url(https://cdn.discordapp.com/attachments/579361313688649730/943574400307986502/latest.png);
+            background-size: 5%;
+        }
+        ul{
+            width: 250px;
+            height: 120px;
+            background-color:#00AEEF;
+            border: 5px solid #000;
+            list-style-type: none;
+            font-size: 25px;
+            text-align: center;
+            padding: 5px;
+         }
+         .mainbox{
+            width:750px;
+            height: 75px;
+            border: 1px solid #000;
+            border-radius: 3px;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+        }
+        #backgroundanim{
+            animation-name: color;
+            animation-duration: 10s;
+            animation-iteration-count: infinite;
+            animation-fill-mode: forwards;
+        }
+        @keyframes color{
+            0%{
+                background-color: #00AEEF;
+            }
+            50%{
+                background-color:#fdfdfd;
+            }
+            100%{
+                background-color: #00AEEF;
+            }
+        }
+        #container{
+            display: flex;
+            height: 1500px;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-evenly;
+
+        }
+        .imageone{
+            
+            border: 3px solid #000; 
+            position: relative;
+        }
+        .imagetwo{
+            
+            border: 3px solid #000; 
+            position: relative;
+        }
+        .imagethree{
+            
+            border: 3px solid #000; 
+            position: relative;
+        }
+        #imagesize{
+            max-width: 35%;
+            height: auto;
+        }
+    </style>
+    <div id="container">
+    <h class="mainbox" id="backgroundanim"><b>Nick "LSXYZ9" De Cesare</b></h>
+
+    <img class="imageone" id="imagesize" src="https://pbs.twimg.com/media/EHg_-9zUYAA8-sv.jpg">
+    <img class="imagetwo" id="imagesize" src="https://pbs.twimg.com/profile_images/1466206331434459138/SK2ZG6Jb_400x400.jpg">
+    <img class="imagethree" id="imagesize" src="https://pbs.twimg.com/media/FK8zxgEVUAIdNqM.jpg"
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="stats.html">Stats</a></li>
+            <li><a href="ls.html">LS</a></li>
+        </ul>
+    </div>
+        <footer style="font-size: 30px"><b>©Copyright Cloud9 2022</b></footer>
+    </nav>
