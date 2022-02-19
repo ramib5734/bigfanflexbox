@@ -35,30 +35,46 @@
         }
         #container{
             display: flex;
-            height: 2000px;
+            height: 1000px;
             flex-direction: column;
             align-items: center;
             justify-content: space-evenly;
         }
+        .row{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            width: 1500px;
+            align-items: center;
+        }
+        .column{
+            display: flex;
+            flex-direction: column;
+            flex-basis: 100%;
+            flex: 1;
+            align-items: center;
+        }
+        .col1{
+            height: 750px;
+        }
+        .col2{
+            height: 750px;
+        }
         #imageone{
-            width: 50%;
+            width: 100%;
             height: auto;
             border: 3px solid #000; 
-            top: 25px;
         }
         #imagetwo{
-            width: 50%;
+            width: 95%;
             height: auto;
             border: 3px solid #000;
-            top: 25px;
-            flex-basis: auto;
+            margin: 75px;
         }
         #imagethree{
-            width: 50%;
+            width: 75%;
             height: auto;
             border: 3px solid #000;
-            top: 25px;
-            flex-basis: auto;
         }
         #navmenu{
             width: 250px;
@@ -70,13 +86,28 @@
             padding: 5px;
             align-self: center;
          }
+         #navcontainer{
+             display: flex;
+             flex-direction: column;
+             justify-content: center;
+             margin: 50px;
+         }
     </style>
-    <div id="container">
     <h id="backgroundanim"><b>Gallery</b></h>
-    <img id="imageone" src="https://assets1.ignimgs.com/2018/01/30/br-1517350618762_160w.jpg?width=1280">
-    <img id="imagetwo" src="https://www.dexerto.com/wp-content/uploads/2021/04/11/perkz-leads-cloud9-to-3-2-victory-over-team-liquid-lcs-mid-season-showdown-placements-recap.jpg">
-    <img id="imagethree" src="https://cdn.discordapp.com/attachments/579361313688649730/942980146573496361/cloud9-blue-feature-img.png">
-    <nav>
+    <div id="container">
+        <div class="row">
+            <div class="column">
+                <div class="col1">
+                    <img id="imageone" src="https://assets1.ignimgs.com/2018/01/30/br-1517350618762_160w.jpg?width=1280">
+                    <img id="imagetwo" src="https://www.dexerto.com/wp-content/uploads/2021/04/11/perkz-leads-cloud9-to-3-2-victory-over-team-liquid-lcs-mid-season-showdown-placements-recap.jpg">
+                </div>
+            </div>
+                <div class="column"> 
+                    <img id="imagethree" src="https://cdn.discordapp.com/attachments/579361313688649730/942980146573496361/cloud9-blue-feature-img.png">
+                </div>
+            </div>
+        </div>
+    <nav id="navcontainer">
         <ul id="navmenu">
             <li><a href="index.html">Home</a></li>
             <li><a href="gallery.html">Gallery</a></li>
@@ -84,6 +115,6 @@
             <li><a href="ls.html">LS</a></li>
         </ul>
     </nav>
-    </div>
+
     <footer style="font-size: 30px"><b>©Copyright Cloud9 2022</b></footer>
 </html>
